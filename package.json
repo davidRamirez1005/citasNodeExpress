@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "s",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon --quiet ./src/app.js",
     "tsc": "tsc -w"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "class-transformer": "0.5.1",
     "class-validator": "0.14.0",
+    "dotenv": "16.3.1",
     "mysql2": "3.5.1",
     "nodemon": "3.0.1",
     "reflect-metadata": "0.1.13",
