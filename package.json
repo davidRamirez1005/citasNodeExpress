@@ -1,0 +1,24 @@
+{
+  "name": "citasnodeexpress",
+  "version": "1.0.0",
+  "description": "s",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --quiet ./src/app.js",
+    "tsc": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "class-transformer": "0.5.1",
+    "class-validator": "0.14.0",
+    "mysql2": "3.5.1",
+    "nodemon": "3.0.1",
+    "reflect-metadata": "0.1.13",
+    "typescript": "5.1.6"
+  }
+}
