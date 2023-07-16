@@ -17,7 +17,7 @@ appPacientes.get('/:id?', (req, res) => {
     },
 )
 : con.query(
-    /* sql */'SELECT * FROM usuarios ORDER BY usu_nombre',
+    /* sql */'SELECT * FROM usuario ORDER BY usu_nombre',
     (err, data, fils) => {
     res.send(data);
     },
