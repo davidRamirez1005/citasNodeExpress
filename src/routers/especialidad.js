@@ -1,6 +1,5 @@
 import express from 'express';
 import con from '../../server/db.js'
-import { plainToClass } from 'class-transformer';
 
 
 const appEspecialidad = express.Router();
