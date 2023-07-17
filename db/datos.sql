@@ -118,3 +118,45 @@ INSERT INTO cita (cit_fecha, cit_estado, cit_medico, cit_datosUsuario) VALUES
 ('2023-07-20', 3, 8, 8),
 ('2023-07-21', 4, 9, 9),
 ('2023-07-22', 5, 10, 10);
+
+INSERT INTO consultorio (cons_codigo, cons_nombre) VALUES 
+(11, 'Consultorio A'),
+(12, 'Consultorio B'),
+(13, 'Consultorio C'),
+(14, 'Consultorio D'),
+(15, 'Consultorio E'),
+(16, 'Consultorio F'),
+(17, 'Consultorio G'),
+(18, 'Consultorio H'),
+(19, 'Consultorio I'),
+(20, 'Consultorio J');
+
+INSERT INTO medico (med_nombreCompleto, med_consultorio, med_especialidad) VALUES 
+('Dr. Juan Pérez', 11, 1),
+('Dra. Ana Rodríguez', 12, 2),
+('Dr. Luis Martínez', 13, 3),
+('Dra. Laura Gómez', 14, 4),
+('Dr. Carlos Sánchez', 15, 5),
+('Dra. María López', 16, 6),
+('Dr. Andrés Torres', 17, 7),
+('Dra. Lucía García', 18, 8),
+('Dr. Miguel González', 19, 9),
+('Dra. Sofía Martínez', 20, 10);
+
+INSERT INTO estado_cita (estcita_id, estcita_nombre) VALUES 
+(12,'Realizada');
+
+INSERT INTO genero (gen_id, gen_nombre, gen_abreviatura) VALUES 
+(12, 'Masculino', 'M');
+
+INSERT INTO cita (cit_fecha, cit_estado, cit_medico, cit_datosUsuario) VALUES 
+('2023-07-13', 3, 1, 1),
+('2023-07-14', 3, 2, 2),
+('2023-07-15', 3, 3, 3),
+('2023-07-16', 3, 4, 4),
+('2023-07-17', 3, 5, 5),
+('2023-07-18', 3, 6, 6),
+('2023-07-19', 3, 7, 7),
+('2023-07-20', 3, 8, 8),
+('2023-07-21', 3, 9, 9),
+('2023-07-22', 3, 10, 10);
