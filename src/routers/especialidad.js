@@ -8,13 +8,18 @@ appEspecialidad.use(express.json());
 /**
  *  ! Obtener todos los médicos de una especialidad específica (por ejemplo, **'Cardiología'**):
  */
-appEspecialidad.get('/:id?', (req, res) => {
-(req.params.id)
+appEspecialidad.get('/:especialidad?', (req, res) => {
+    let especialidad = req.params.especialidad;
     con.query(
-    /* sql */'SELECT cita.*, usuario.usu_nombre, usuario.usu_primer_apellido FROM cita INNER JOIN usuario ON cita.cit_datosUsuario = usuario.usu_id ORDER BY usuario.usu_nombre, usuario.usu_primer_apellido',
-    (err, data, fils) => {
-    res.send(data);
-    },
+        /* sql */`SELECT medico.*, especialista.esp_nombre
+        FROM medico
+        INNER JOIN especialista ON medico.med_especialidad = especialista.esp_id
+        WHERE especialista.esp_nombre = ?`, [especialidad],
+        (err, data, fields) => {
+            res.send(data);
+        }
     );
 });
+
+
 export default appEspecialidad
